@@ -4,9 +4,9 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/sc.js"></script>
-<?php
-include('modelo/funciones.php');
-?>
+<!-- <?php
+// include('modelo/funciones.php');
+?> -->
 
 
 	<div class="miform">
@@ -31,17 +31,28 @@ include('modelo/funciones.php');
 
 						<hr>
 
-<!---------------------Municipio--------------------------->
-				<!-- <?php
-?> -->
-			 <p>Municipio</p>
+<!---------------------MUNICIPIO--------------------------->
+			<div class="form-group">
+			 <p>Municipio:</p>
 			 		<input id="municipio"
 								 type="text"
 								 name="municipio"
 								 readonly="readonly"
-								 value="<?php echo $mun['municipio'];?>">
-					<br/>
+								 value="<?php include('modelo/funciones.php');
+								 echo $mun['municipio'];?>">
+								 <br/>
+			</div>
 
+<!---------------------PROVINCIA--------------------------->
+
+			<div class="form-group">
+				<p>Provincia</p>
+					<input id="provincia"
+								 type="text"
+								 name="provincia"
+								 value="">
+								 <br/>
+			</div>
 
 			</form>
 	</div>
